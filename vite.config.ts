@@ -5,12 +5,11 @@ import vue from '@vitejs/plugin-vue';
 import vueJsx from '@vitejs/plugin-vue-jsx';
 import AutoImport from 'unplugin-auto-import/vite';
 
-module.exports = {
-  publicPath: "./"
-};
-
 // https://vitejs.dev/config/
 export default defineConfig({
+  module.exports: {
+  publicPath: "./"
+},
   server: {
     host: 'localhost',
     port: 3090,
